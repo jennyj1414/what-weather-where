@@ -1,3 +1,35 @@
-h1 {
-  color: aquamarine;
+.weather-app {
+  display: block;
+  margin: auto 0;
+}
+
+.city,
+.country {
+  display: inline;
+}
+.location {
+  background-color: palegoldenrod;
+}
+.current-date {
+  background-color: palegreen;
+}
+
+.current-weather-data {
+  background-color: palevioletred;
+}
+
+.current-weather-symbol {
+  background-color: powderblue;
+}
+
+.footer-signoff {
+  background-color: papayawhip;
+}
+
+.footer-shecodes {
+  background-color: plum;
+}
+
+.footer-github {
+  background-color: peru;
 }
