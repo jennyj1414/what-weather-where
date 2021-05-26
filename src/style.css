@@ -1,35 +1,117 @@
+body {
+  background-image: url(/Users/jennyjanssen/Documents/GitHub/what-weather-where/media/AdobeStock_220237587.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: small;
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
 .weather-app {
   display: block;
-  margin: auto 0;
+  margin: 100px auto;
+  font-family: skippy-sharp, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 600px;
 }
 
 .city,
 .country {
   display: inline;
 }
+
 .location {
-  background-color: palegoldenrod;
+  position: relative;
+  background-color: #ffff99;
+  height: 60px;
+  min-width: 240px;
+  width: fit-content;
+  padding-left: 20px;
+  transform: rotate(1deg);
 }
+
+.city {
+  padding-right: 3px;
+  font-size: 40px;
+}
+
+.country {
+  letter-spacing: 0.1em;
+}
+
 .current-date {
-  background-color: palegreen;
+  background-color: #7ae0ff;
+  width: 240px;
+  height: 60px;
+  margin-top: 40px;
+  padding-top: 20px;
+  transform: rotate(-2deg);
+}
+
+.current-date-value {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+  transform: rotate(2deg);
 }
 
 .current-weather-data {
-  background-color: palevioletred;
+  background-color: #ff7eb9;
+  width: 240px;
+  height: 140px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  transform: rotate(2deg);
 }
 
 .current-weather-symbol {
-  background-color: powderblue;
+  background-color: #fff740;
+  width: 240px;
+  height: 140px;
+  margin-top: 20px;
+  transform: rotate(-1deg);
 }
 
-.footer-signoff {
-  background-color: papayawhip;
+img {
+  align-self: center;
 }
 
-.footer-shecodes {
-  background-color: plum;
+.footer {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
 }
 
+.footer-signoff,
+.footer-shecodes,
 .footer-github {
-  background-color: peru;
+  color: black;
+}
+
+.box {
+  background: #ffff99;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 200px;
+  padding: 2.5em;
+  position: relative;
+  box-shadow: 0 25px 25px -35px rgba(0, 0, 0, 0.5);
 }
