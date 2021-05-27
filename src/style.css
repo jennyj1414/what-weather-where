@@ -1,5 +1,5 @@
 body {
-  background-image: url(/Users/jennyjanssen/Documents/GitHub/what-weather-where/media/AdobeStock_220237587.jpeg);
+  background-image: url("../media/AdobeStock_220237587.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
