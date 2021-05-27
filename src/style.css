@@ -99,8 +99,8 @@ a {
 .current-weather-data::after {
   content: "";
   position: absolute;
-  top: 90%;
-  bottom: 12px;
+  top: 50%;
+  bottom: 6px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.35);
   z-index: -1;
 }
@@ -115,8 +115,8 @@ a {
 .current-weather-data::before {
   background: rgb(255, 0, 200);
   left: 40px;
-  right: 4px;
-  transform: rotate(5deg);
+  right: 2px;
+  transform: rotate(3deg);
 }
 
 .current-temperature {
