@@ -86,11 +86,37 @@ a {
   background-color: #ff7eb9;
   width: 240px;
   height: 140px;
+  position: relative;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 40px;
   padding: 20px;
   transform: rotate(2deg);
+  box-shadow: 0 20px 25px -35px rgba(0, 0, 0, 0.15);
+}
+
+.current-weather-data::before,
+.current-weather-data::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  bottom: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.35);
+  z-index: -1;
+}
+
+.current-weather-data::before {
+  background: blue;
+  left: 4px;
+  right: 40px;
+  transform: rotate(-5deg);
+}
+
+.current-weather-data::before {
+  background: rgb(255, 0, 200);
+  left: 40px;
+  right: 4px;
+  transform: rotate(5deg);
 }
 
 .current-temperature {
@@ -117,18 +143,6 @@ a {
   margin-top: 20px;
   transform: rotate(-1deg);
   position: relative;
-}
-
-.current-weather-symbol::before,
-.current-weather-symbol::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-.current-weather-symbol::before {
-  background: blue;
 }
 
 .current-weather-svg {
