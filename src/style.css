@@ -1,7 +1,18 @@
+html {
+  min-height: 100%;
+}
+
 body {
-  background-image: url("../media/AdobeStock_220237587.jpeg");
+  min-height: 100%;
+  display: flex;
+  background-image: url("../media/wallpaper.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -78,7 +89,25 @@ a {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 40px;
+  padding: 20px;
   transform: rotate(2deg);
+}
+
+.current-temperature {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.units {
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.current-precipitation,
+.current-humidity,
+.current-wind {
+  font-size: 24;
+  padding-left: 5px;
 }
 
 .current-weather-symbol {
@@ -87,10 +116,23 @@ a {
   height: 140px;
   margin-top: 20px;
   transform: rotate(-1deg);
+  position: relative;
 }
 
-img {
-  align-self: center;
+.current-weather-symbol::before,
+.current-weather-symbol::after {
+  content: "";
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.current-weather-symbol::before {
+  background: blue;
+}
+
+.current-weather-svg {
+  padding-bottom: 40px;
 }
 
 .footer {
@@ -103,6 +145,14 @@ img {
 .footer-shecodes,
 .footer-github {
   color: black;
+}
+
+.footer-signoff a {
+  color: #ff7eb9;
+}
+
+.footer-shecodes a {
+  color: #5aaec7;
 }
 
 .box {
