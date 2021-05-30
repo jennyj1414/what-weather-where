@@ -67,7 +67,7 @@ a {
 }
 
 .current-date {
-  background-color: #7ae0ff;
+  background-color: #01b6e2;
   width: 240px;
   height: 60px;
   margin-top: 40px;
@@ -84,7 +84,7 @@ a {
 }
 
 .current-weather-data {
-  background-color: #ff7eb9;
+  background-color: #f170ac;
   width: 240px;
   height: 200px;
   position: relative;
@@ -123,6 +123,7 @@ a {
 */
 
 .current-temperature {
+  padding-left: 5px;
   font-size: 40px;
   line-height: 1;
 }
