@@ -5,9 +5,6 @@ html {
 body {
   min-height: 100%;
   display: flex;
-  background-image: url("../media/wallpaper.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .container {
