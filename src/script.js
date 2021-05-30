@@ -11,31 +11,34 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
   let hours = date.getHours();
-  if (hours > 10) {
+  if (hours < 10) {
     hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
-  if (minutes > 10) {
+  if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
-  let currentTemperature = document.querySelector(".currentTemperature");
+  let currentTemperature = document.querySelector(".current-temperature");
   let city = document.querySelector(".city");
-  let description = document.querySelector(".description");
+  let countryCode = document.querySelector(".country");
+  let description = document.querySelector(".current-description");
   let currentHumidity = document.querySelector(".current-humidity");
   let currentWind = document.querySelector(".current-wind");
-  let currentWeatherIcon = doxument.querySelector(".current-icon");
+  let currentDate = document.querySelector(".current-date-value");
+  let currentWeatherIcon = document.querySelector(".current-icon");
 
-  currentTemperature.innerHTML = Math.round(response.data.main.temp);
   city.innerHTML = response.data.name;
+  countryCode.innerHTML = response.data.sys.country;
+  currentTemperature.innerHTML = Math.round(response.data.main.temp);
   description.innerHTML = response.data.weather[0].description;
   currentHumidity.innerHTML = response.data.main.humidity;
   currentWind.innerHTML = Math.round(response.data.wind.speed);
 
-  currentDate.innerHTML = formatDate(repsonse.data.dt * 1000);
+  currentDate.innerHTML = formatDate(response.data.dt * 1000);
 
   currentWeatherIcon.setAttribute(
     "src",
@@ -46,8 +49,8 @@ function displayTemperature(response) {
 }
 let apiKey = "4f0c3132958148b431199806e8e0d604";
 
-let city = "Berlin";
+let city = "Sydney";
 
-let apiUrl = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units-metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
