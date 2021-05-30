@@ -31,7 +31,7 @@ a {
 
 .weather-app {
   display: block;
-  margin: 100px auto;
+  margin: 75px auto;
   font-family: skippy-sharp, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -170,6 +170,10 @@ a {
   margin-top: 15px;
   margin-right: 10px;
   transform: rotate(6deg);
+}
+
+.search-form {
+  margin-top: 40px;
 }
 
 .footer {
