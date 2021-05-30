@@ -128,6 +128,20 @@ a {
   line-height: 1;
 }
 
+.units a {
+  font-family: skippy-sharp, sans-serif;
+  color: #ffd100;
+}
+
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
 .current-description {
   font-size: 30px;
   line-height: 1;
