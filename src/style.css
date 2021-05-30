@@ -27,7 +27,6 @@ a {
   font-style: normal;
   font-size: small;
   text-decoration: none;
-  color: cornflowerblue;
 }
 
 .weather-app {
@@ -46,7 +45,7 @@ a {
 
 .location {
   position: relative;
-  background-color: #ffff99;
+  background-color: #ffd100;
   height: 60px;
   min-width: 240px;
   width: fit-content;
@@ -60,6 +59,10 @@ a {
 }
 
 .country {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 900;
+  font-style: normal;
+  font-size: small;
   letter-spacing: 0.1em;
 }
 
@@ -73,10 +76,11 @@ a {
 }
 
 .current-date-value {
-  text-align: center;
+  padding-right: 100px;
+  text-align: right;
   font-size: 24px;
   line-height: 1;
-  transform: rotate(2deg);
+  transform: rotate(-1deg);
 }
 
 .current-weather-data {
@@ -134,7 +138,17 @@ a {
   vertical-align: top;
 }
 
-.current-precipitation,
+.humidity-list,
+.wind-list {
+  padding-left: 20px;
+  transform: rotate(-2deg);
+  letter-spacing: 0.05em;
+}
+
+.humidity-list {
+  padding-top: 10px;
+}
+
 .current-humidity,
 .current-wind {
   font-size: 20px;
@@ -143,16 +157,18 @@ a {
 }
 
 .current-weather-symbol {
-  background-color: #fff740;
+  background-color: #ffeba1;
   width: 240px;
   height: 140px;
-  margin-top: 20px;
+  margin-top: 30px;
   transform: rotate(-1deg);
   position: relative;
 }
 
-.current-weather-svg {
-  padding-bottom: 40px;
+.current-icon {
+  margin-top: 15px;
+  margin-right: 10px;
+  transform: rotate(6deg);
 }
 
 .footer {
@@ -165,23 +181,17 @@ a {
 .footer-shecodes,
 .footer-github {
   color: black;
+  letter-spacing: 0.05em;
 }
 
 .footer-signoff a {
-  color: #ff7eb9;
+  color: #ed579e;
 }
 
 .footer-shecodes a {
-  color: #5aaec7;
+  color: #a5cb4d;
 }
 
-.box {
-  background: #ffff99;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 200px;
-  padding: 2.5em;
-  position: relative;
-  box-shadow: 0 25px 25px -35px rgba(0, 0, 0, 0.5);
+.footer-github a {
+  color: #01b6e2;
 }
