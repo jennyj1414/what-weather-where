@@ -35,7 +35,10 @@ a {
   font-family: skippy-sharp, sans-serif;
   font-weight: 400;
   font-style: normal;
-  max-width: 600px;
+}
+
+.weather-current {
+  max-width: 1000px;
 }
 
 .city,
@@ -186,8 +189,31 @@ a {
   transform: rotate(6deg);
 }
 
+.weather-forecast {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.forecast-days {
+  background-color: #a5cb4d;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+}
+
+.forecast-data {
+  margin-top: 20px;
+  width: 160px;
+  background-color: #dbe246;
+}
+
+.weather-forecast-temperature-min,
+.weather-forecast-temperature-max {
+  display: inline;
+}
+
 .search-form {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .footer {

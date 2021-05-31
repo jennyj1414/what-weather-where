@@ -20,59 +20,79 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="location">
-          <div class="city">city</div>
-          <div class="country">country code</div>
-        </div>
-        <div class="current-date">
-          <div class="current-date-value"></div>
-        </div>
-        <div class="row current-weather">
-          <div class="col-4 current-weather-data">
-            <ul>
-              <li>
-                <span class="current-temperature"></span>
-                <span class="units">
-                  <a href="#" id="celsius-link" class="active">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
-              </li>
-              <li>
-                <span class="current-description"></span>
-              </li>
-              <li class="humidity-list">
-                <span>humidity: </span>
-                <span class="current-humidity"></span>
-                <span>%</span>
-              </li>
-              <li class="wind-list">
-                <span>wind speed: </span>
-                <span class="current-wind"></span>
-                <span>km/h</span>
-              </li>
-            </ul>
+        <div class="weather-current">
+          <div class="location">
+            <div class="city">city</div>
+            <div class="country">country code</div>
           </div>
-          <div class="col-4 text-center current-weather-symbol">
-            <img src="" alt="" class="current-icon" />
+          <div class="current-date">
+            <div class="current-date-value"></div>
+          </div>
+          <div class="row current-weather">
+            <div class="col-4 current-weather-data">
+              <ul>
+                <li>
+                  <span class="current-temperature"></span>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="current-description"></span>
+                </li>
+                <li class="humidity-list">
+                  <span>humidity: </span>
+                  <span class="current-humidity"></span>
+                  <span>%</span>
+                </li>
+                <li class="wind-list">
+                  <span>wind speed: </span>
+                  <span class="current-wind"></span>
+                  <span>km/h</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 text-center current-weather-symbol">
+              <img src="" alt="" class="current-icon" />
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <form class="search-form">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Type a city..."
-                class="form-control"
-                id="search-input"
-                autocomplete="off"
-              />
+        <div class="weather-forecast">
+          <div class="row forecast-days">
+            <div class="col-2">Monday</div>
+          </div>
+          <div class="row forecast-data">
+            <div class="col-2">
+              <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" />
+              <div class="row forecast-temperature-day1">
+                <span class="weather-forecast-temperature-min">12</span
+                ><span class="weather-forecast-temperature-max">18</span>
+              </div>
             </div>
-            <div class="col-3">
-              <input type="submit" value="search" class="btn btn-primary" />
-            </div>
-          </form>
+          </div>
         </div>
+
+        <div class="weather-search">
+          <div class="row">
+            <form class="search-form">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="search-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="search" class="btn btn-primary" />
+              </div>
+            </form>
+          </div>
+        </div>
+
         <div class="footer">
           <div class="footer-signoff">
             What.Weather.Where was designed and coded by
@@ -96,6 +116,7 @@
           </div>
         </div>
       </div>
+
       <script src="src/script.js"></script>
     </div>
   </body>
