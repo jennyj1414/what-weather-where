@@ -194,16 +194,17 @@ a {
   text-align: center;
 }
 
-.forecast-days {
+.forecast-day {
   background-color: #a5cb4d;
-  width: 160px;
+  width: 120px;
   height: 40px;
   text-align: center;
+  padding-top: 7px;
 }
 
 .forecast-data {
   margin-top: 20px;
-  width: 160px;
+  width: 120px;
   background-color: #dbe246;
 }
 
