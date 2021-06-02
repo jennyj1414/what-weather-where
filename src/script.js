@@ -58,7 +58,7 @@ function displayForecast(response) {
             <span class="weather-forecast-temperature-min">${Math.round(
               forecastDay.temp.min
             )}°</span>
-            <span>/ </span>
+            <span class="dash">/ </span>
             <span class="weather-forecast-temperature-max">${Math.round(
               forecastDay.temp.max
             )}°</span>
@@ -122,32 +122,7 @@ function handleSubmit(event) {
   search(searchInput.value);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let currentTemperature = document.querySelector(".current-temperature");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let currentTemperature = document.querySelector(".current-temperature");
-  currentTemperature.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector(".search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");

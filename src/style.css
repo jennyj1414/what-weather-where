@@ -99,6 +99,7 @@ a {
   box-shadow: 0 20px 25px -35px rgba(0, 0, 0, 0.15);
 }
 
+/*
 .current-weather-data::before,
 .current-weather-data::after {
   content: "";
@@ -113,15 +114,16 @@ a {
   background: blue;
   left: 4px;
   right: 40px;
-  transform: rotate(-5deg);
+  transform: rotate(-2deg);
 }
 
 .current-weather-data::after {
   background: rgb(255, 0, 200);
   left: 40px;
   right: 2px;
-  transform: rotate(3deg);
+  transform: rotate(2deg);
 }
+*/
 
 .current-temperature {
   padding-left: 5px;
@@ -131,16 +133,7 @@ a {
 
 .units a {
   font-family: skippy-sharp, sans-serif;
-  color: #ffd100;
-}
-
-.units .active {
   color: black;
-  cursor: default;
-}
-
-.units .active:hover {
-  text-decoration: none;
 }
 
 .current-description {
@@ -175,14 +168,14 @@ a {
 .current-weather-symbol {
   background-color: #ffeba1;
   width: 240px;
-  height: 140px;
+  height: 200px;
   margin-top: 30px;
   transform: rotate(-1deg);
   position: relative;
 }
 
 .current-icon {
-  margin-top: 15px;
+  margin-top: 50px;
   margin-right: 10px;
   transform: rotate(6deg);
 }
@@ -205,12 +198,18 @@ a {
 .forecast-data {
   margin-top: 20px;
   width: 120px;
+  height: 160px;
   background-color: #dbe246;
 }
 
 .weather-forecast-temperature-min,
 .weather-forecast-temperature-max {
   display: inline;
+  font-size: 24px;
+}
+
+.dash {
+  font-size: 32px;
 }
 
 .search-form {
