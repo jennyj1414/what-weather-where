@@ -99,7 +99,6 @@ a {
   box-shadow: 0 20px 25px -35px rgba(0, 0, 0, 0.15);
 }
 
-/*
 .current-weather-data::before,
 .current-weather-data::after {
   content: "";
@@ -117,13 +116,12 @@ a {
   transform: rotate(-5deg);
 }
 
-.current-weather-data::before {
+.current-weather-data::after {
   background: rgb(255, 0, 200);
   left: 40px;
   right: 2px;
   transform: rotate(3deg);
 }
-*/
 
 .current-temperature {
   padding-left: 5px;
