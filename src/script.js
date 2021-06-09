@@ -1,3 +1,19 @@
+// function to use API to retrieve data for the current position
+function getPosition(position) {
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let lat = position.coords.latitude;
+  let long = position.coords.longitude;
+  let units = "metric";
+  let apiKey = "4f0c3132958148b431199806e8e0d604";
+  let apiUrl = `${apiEndpoint}?lat=${lat}&lon=${long}&units=${units}&appid=${apiKey}`;
+  console.log(apiUrl);
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+// get position
+navigator.geolocation.getCurrentPosition(getPosition);
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let days = [
@@ -125,4 +141,4 @@ function handleSubmit(event) {
 let form = document.querySelector(".search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("New York");
+search(getPosition);
