@@ -197,6 +197,7 @@ a {
 
 .forecast-data {
   margin-top: 20px;
+  padding-top: 20px;
   width: 120px;
   height: 160px;
   background-color: #dbe246;
@@ -213,6 +214,7 @@ a {
 }
 
 .search-form {
+  font-family: letter-gothic-std, monospace;
   margin-top: 60px;
   font-size: 40px;
 }

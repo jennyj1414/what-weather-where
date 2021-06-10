@@ -67,9 +67,9 @@ function displayForecast(response) {
       <div class="col-2">
         <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
         <div class="forecast-data">
-          <img src="http://openweathermap.org/img/wn/${
+          <img src="media/${
             forecastDay.weather[0].icon
-          }@2x.png" alt="" />
+          }.png" alt="" width="80px"/>
           <div class="forecast-temperature-day">
             <span class="weather-forecast-temperature-min">${Math.round(
               forecastDay.temp.min
@@ -118,7 +118,7 @@ function displayTemperature(response) {
 
   currentWeatherIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `media/${response.data.weather[0].icon}.png`
   );
 
   currentWeatherIcon.setAttribute("alt", response.data.weather[0].description);
@@ -141,4 +141,4 @@ function handleSubmit(event) {
 let form = document.querySelector(".search-form");
 form.addEventListener("submit", handleSubmit);
 
-search(getPosition);
+search("Berlin");
