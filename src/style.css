@@ -175,9 +175,9 @@ a {
 }
 
 .current-icon {
-  margin-top: 50px;
-  margin-right: 10px;
   transform: rotate(6deg);
+  margin-top: 10px;
+  width: 80%;
 }
 
 .weather-forecast {
